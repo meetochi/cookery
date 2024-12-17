@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<h<tml lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Bell Cookery</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body Styling */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #1a1a1a; /* Dark background */
+      color: white; /* Light text for contrast */
+      line-height: 1.6;
+    }
+
+    /* Navigation Bar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #000; /* Black background */
+      padding: 10px 20px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #FFD700; /* Yellow text for the logo */
+    }
+
+    .tagline {
+      font-style: italic;
+      color: #FFD700; /* Yellow tagline */
+      font-size: 14px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: white; /* White links */
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #FFD700; /* Yellow on hover */
+    }
+
+    /* Section Styling */
+    section {
+      padding: 40px 20px;
+      margin: 20px auto;
+      max-width: 1200px;
+      background-color: #333; /* Dark background for sections */
+      border-radius: 10px;
+    }
+
+    section h1 {
+      color: #FFD700; /* Yellow headings */
+      margin-bottom: 20px;
+    }
+
+    section p {
+      margin: 10px 0 20px;
+    }
+
+    /* Image Styling */
+    img {
+      width: 100%;
+      max-width: 350px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 15px;
+    }
+
+    /* Form Styling */
+    form {
+      background-color: #444; /* Dark background for forms */
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      font-weight: bold;
+      color: #FFD700; /* Yellow labels */
+    }
+
+    textarea, input[type="text"], input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: #555; /* Dark input background */
+      color: white; /* White text in inputs */
+    }
+
+    input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #FFD700; /* Yellow submit button */
+      color: black; /* Black text */
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #FFA500; /* Darker yellow on hover */
+    }
+
+    /* Product Layout */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .product {
+      text-align: center;
+      background-color: #444; /* Dark background for products */
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .product h3 {
+      color: #FFD700; /* Yellow product names */
+      margin-top: 10px;
+    }
+
+    .product p {
+      color: white; /* White description text */
+      margin-bottom: 15px;
+    }
+
+    .product h3 {
+      color: #FFD700; /* Yellow price */
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+  <div>
+    <div class="logo">THE BELL COOKERY</div>
+    <div class="tagline">HOME OF AESTHETIC COOKING</div>
+  </div>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact Us</a></li>
+  </ul>
+</nav>
+
+<!-- Home Section -->
+<section id="home">
+  <h1>About Us</h1>
+  <img src="path/to/background-image.jpg" alt="Background Image">
+  <p>
+    Welcome to THE BELL COOKERY, where every meal is a celebration of fresh, organic ingredients and culinary passion. Our cozy, welcoming space is infused with the aroma of handpicked herbs and slow-cooked dishes, promising a dining experience that's both nourishing and indulgent.
+  </p>
+</section>
+
+<!-- Products Section -->
+<section id="products">
+  <h1>Our Products</h1>
+  <div class="products">
+    <!-- Product 1 -->
+    <div class="product">
+      <img src="path/to/rice-beef-stew.jpg" alt="Rice Beef Stew">
+      <h2>Rice Beef Stew</h2>
+      <p>A comforting dish featuring tender beef served over fluffy rice.</p>
+      <h3>KES. 400</h3>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product">
+      <img src="path/to/beans-rice.jpg" alt="Beans and Rice">
+      <h2>Beans and Rice</h2>
+      <p>A nutritious dish combining beans and fluffy rice.</p>
+      <h3>KES. 250</h3>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product">
+      <img src="path/to/githeri.jpg" alt="Githeri">
+      <h2>Githeri</h2>
+      <p>A tantalizing Kikuyu meal containing a mixture of beans and maize cooked with freshly picked ingredients.</p>
+      <h3>KES. 250</h3>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product">
+      <img src="path/to/fries_updated.jpg" alt="Fries">
+      <h2>Fries</h2>
+      <p>Crispy golden potato sticks perfectly seasoned and served as a delicious snack or side dish.</p>
+      <h3>KES. 150</h3>
+    </div>
+  </div>
+</section>
+
+<!-- Order Section -->
+<section id="order">
+  <h1>Place Your Order</h1>
+  <form>
+    <label for="orderMessage">Specify your order here:</label>
+    <textarea id="orderMessage" rows="5"></textarea>
+    <input type="submit" value="Submit the Order">
+  </form>
+</section>
+
+<!-- Contact Us Section -->
+<section id="contact">
+  <h1>Contact Us</h1>
+  <form>
+    <label for="username">Your Name:</label>
+    <input type="text" id="username" name="username" placeholder="Enter your name">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email">
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" placeholder="Enter your message"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</section>
+
+</body>
+</html>
